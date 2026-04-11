@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verdicta Terms of Service</title>
+    <style>
+      :root {
+        --bg: #0f0f23;
+        --panel: #17172f;
+        --border: rgba(255, 255, 255, 0.08);
+        --text: #eef2ff;
+        --muted: #a5b4d4;
+        --accent: #a78bfa;
+        --accent-2: #c4b5fd;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", "Noto Sans JP", sans-serif;
+        background: radial-gradient(circle at top, #1e1b4b 0%, var(--bg) 42%);
+        color: var(--text);
+        line-height: 1.65;
+      }
+      .wrap {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 32px 20px 80px;
+      }
+      .hero {
+        padding: 28px;
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        background: linear-gradient(180deg, rgba(167,139,250,0.14), rgba(23,23,47,0.9));
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
+      }
+      .eyebrow {
+        color: var(--accent-2);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(32px, 4vw, 42px);
+        line-height: 1.08;
+      }
+      .sub {
+        color: var(--muted);
+        margin: 0;
+        font-size: 15px;
+      }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+      .meta span, .lang-switch button, .nav a {
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,0.05);
+        border-radius: 999px;
+        padding: 8px 12px;
+        color: var(--text);
+        font-size: 13px;
+      }
+      .toolbar {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 22px 0 28px;
+      }
+      .lang-switch {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .lang-switch button {
+        cursor: pointer;
+      }
+      .lang-switch button.active {
+        background: rgba(167,139,250,0.18);
+        border-color: rgba(167,139,250,0.6);
+      }
+      .nav {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .nav a {
+        text-decoration: none;
+      }
+      .lang { display: none; }
+      .lang.active { display: block; }
+      .section {
+        margin-top: 18px;
+        padding: 24px;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        background: rgba(23, 23, 47, 0.88);
+      }
+      h2 {
+        margin: 0 0 12px;
+        font-size: 21px;
+      }
+      h3 {
+        margin: 24px 0 10px;
+        font-size: 16px;
+        color: var(--accent-2);
+      }
+      p, li {
+        color: var(--text);
+        font-size: 15px;
+      }
+      ul {
+        margin: 10px 0 0 20px;
+        padding: 0;
+      }
+      .notice {
+        margin-top: 18px;
+        padding: 16px 18px;
+        border-radius: 16px;
+        background: rgba(167,139,250,0.08);
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .footer {
+        margin-top: 22px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      a.inline {
+        color: var(--accent-2);
+      }
+      @media (max-width: 640px) {
+        .hero, .section { padding: 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hero">
+        <div class="eyebrow">Verdicta</div>
+        <h1>Terms of Service</h1>
+        <p class="sub">
+          These terms govern the use of Verdicta, including verdict features, history, optional sync,
+          in-app purchases, notifications, and support access.
+        </p>
+        <div class="meta">
+          <span>Effective date: 2026-04-11</span>
+          <span>Operator: ClueNode</span>
+          <span>Contact: cluenode@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="lang-switch">
+          <button type="button" data-lang="ko" class="active">한국어</button>
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="ja">日本語</button>
+        </div>
+        <div class="nav">
+          <a href="./privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+
+      <section class="lang active" data-lang="ko">
+        <div class="section">
+          <h2>1. 약관 동의</h2>
+          <p>
+            본 이용약관은 Verdicta 앱 및 관련 서비스의 이용 조건을 정합니다.
+            사용자는 앱을 설치, 접속, 사용함으로써 본 약관에 동의한 것으로 봅니다.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>2. 서비스 내용</h2>
+          <p>
+            Verdicta는 오라클 기반 판단, 질문 기록, 흐름 조회, 회고 기록, 궁합 보기,
+            수동/자동 뽑기, 암호화 백업, 선택적 동기화 등의 기능을 제공합니다.
+          </p>
+          <div class="notice">
+            Verdicta의 결과는 참고용 판단 보조 도구입니다. 의료, 법률, 투자, 세무, 위기 대응 등 전문적 조언을 대체하지 않습니다.
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>3. 계정 및 데이터</h2>
+          <ul>
+            <li>앱은 로컬 우선 구조로 동작하며, 일부 기능은 계정 연결 또는 동기화를 포함할 수 있습니다.</li>
+            <li>사용자는 본인이 입력한 정보와 기록에 대해 책임을 집니다.</li>
+            <li>사용자는 앱 내 기능 또는 운영자 문의를 통해 일부 데이터 삭제를 요청할 수 있습니다.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>4. 유료 기능 및 결제</h2>
+          <ul>
+            <li>일부 기능은 유료로 제공될 수 있습니다.</li>
+            <li>구매는 Apple App Store 또는 Google Play의 결제 정책에 따라 처리됩니다.</li>
+            <li>환불, 결제 취소, 세금, 청구 관련 사항은 각 스토어 정책이 우선 적용됩니다.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5. 사용 제한</h2>
+          <p>사용자는 다음 행위를 해서는 안 됩니다.</p>
+          <ul>
+            <li>앱 또는 서비스의 정상 동작을 방해하는 행위</li>
+            <li>리버스 엔지니어링, 무단 복제, 보안 우회</li>
+            <li>타인의 권리, 명예, 개인정보를 침해하는 행위</li>
+            <li>법령 또는 공공질서에 반하는 목적으로 서비스를 사용하는 행위</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>6. 지식재산권</h2>
+          <p>
+            앱, 디자인, 오라클 구성, 텍스트, 상표, 코드 등 서비스에 관한 권리는 운영자 또는 정당한 권리자에게 귀속됩니다.
+            사용자는 약관과 법령이 허용하는 범위를 넘어 이를 이용할 수 없습니다.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>7. 사용자 입력 콘텐츠</h2>
+          <p>
+            사용자가 입력한 질문, 메모, 프로필 정보 등의 권리는 사용자에게 있습니다.
+            다만 서비스 제공, 동기화, 백업, 구매 검증, 고객 지원 처리를 위해 필요한 범위에서만 해당 정보를 처리할 수 있습니다.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>8. 책임 제한</h2>
+          <ul>
+            <li>서비스는 현재 상태로 제공됩니다.</li>
+            <li>운영자는 결과 해석, 판단, 행동 선택에 대해 사용자를 대신해 책임지지 않습니다.</li>
+            <li>법이 허용하는 범위에서, 운영자는 간접적 손해, 특별 손해, 결과적 손해에 대한 책임을 제한할 수 있습니다.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>9. 서비스 변경 및 종료</h2>
+          <p>
+            운영자는 서비스 내용, 기능, 유료 정책, 지원 범위를 변경하거나 중단할 수 있습니다.
+            중요한 변경이 있는 경우 앱 또는 게시 페이지를 통해 고지할 수 있습니다.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>10. 준거법 및 문의</h2>
+          <p>
+            본 약관은 강행법규에 달리 정함이 없는 한 대한민국 법령을 기준으로 해석합니다.
+            문의는 <a class="inline" href="mailto:cluenode@gmail.com">cluenode@gmail.com</a> 으로 할 수 있습니다.
+          </p>
+          <div class="notice">
+            이 문서는 운영용 약관 초안입니다. 실제 배포 전에는 사업자명, 결제 정책 문구,
+            준거법/관할 조항의 적정성을 최종 검토하는 것이 좋습니다.
+          </div>
+        </div>
+      </section>
+
+      <section class="lang" data-lang="en">
+        <div class="section">
+          <h2>1. Acceptance</h2>
+          <p>
+            These Terms of Service govern your use of Verdicta and related services.
+            By installing, accessing, or using the app, you agree to these terms.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>2. Service Description</h2>
+          <p>
+            Verdicta provides oracle-based verdicts, question history, recurring flow views, reflection records,
+            compatibility views, manual/auto draw flows, encrypted backups, and optional sync features.
+          </p>
+          <div class="notice">
+            Verdicta is a reflective decision-support tool. It does not replace medical, legal, financial,
+            tax, safety, or other professional advice.
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>3. Accounts and Data</h2>
+          <ul>
+            <li>The app is designed as local-first, though some features may involve account linking or sync.</li>
+            <li>You are responsible for the information and records you enter.</li>
+            <li>You may request deletion of some data through in-app tools or by contacting the operator.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>4. Paid Features and Purchases</h2>
+          <ul>
+            <li>Some features may be offered as paid content.</li>
+            <li>Purchases are processed under Apple App Store or Google Play policies.</li>
+            <li>Refunds, cancellations, taxes, and billing issues are handled under the relevant store's rules.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5. Restrictions</h2>
+          <p>You may not:</p>
+          <ul>
+            <li>interfere with normal service operation,</li>
+            <li>reverse engineer, bypass security, or copy the service without permission,</li>
+            <li>use the service to violate others' rights or privacy, or</li>
+            <li>use the service for unlawful or abusive purposes.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>6. Intellectual Property</h2>
+          <p>
+            The app, design, code, brand, and oracle-related service content belong to the operator or its licensors.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>7. User Content</h2>
+          <p>
+            You retain rights to the questions, notes, and profile content you provide.
+            We may process that content only as needed to operate the service, sync features, backups, purchase verification, or support.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>8. Disclaimer and Liability</h2>
+          <ul>
+            <li>The service is provided on an "as is" basis.</li>
+            <li>You remain responsible for your own judgments, actions, and decisions.</li>
+            <li>To the extent allowed by law, the operator limits liability for indirect, special, or consequential damages.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>9. Changes or Termination</h2>
+          <p>
+            We may change, suspend, or discontinue parts of the service, including features, pricing, or support scope.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>10. Governing Law and Contact</h2>
+          <p>
+            Unless mandatory law requires otherwise, these terms are governed by the laws of the Republic of Korea.
+            Contact: <a class="inline" href="mailto:cluenode@gmail.com">cluenode@gmail.com</a>
+          </p>
+          <div class="notice">
+            This is a practical operating draft. Review the operator identity, purchase wording,
+            and jurisdiction language before final public release.
+          </div>
+        </div>
+      </section>
+
+      <section class="lang" data-lang="ja">
+        <div class="section">
+          <h2>1. 同意</h2>
+          <p>
+            本利用規約は、Verdictaおよび関連サービスの利用条件を定めるものです。
+            アプリをインストール、利用、またはアクセスすることで、本規約に同意したものとみなされます。
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>2. サービス内容</h2>
+          <p>
+            Verdictaは、オラクルによる判定、履歴、定期フロー、振り返り記録、相性表示、
+            手動/自動の引き方、暗号化バックアップ、任意の同期機能を提供します。
+          </p>
+          <div class="notice">
+            Verdictaは判断補助・振り返りのためのツールです。医療、法律、投資、税務、
+            危機対応などの専門的助言に代わるものではありません。
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>3. アカウントとデータ</h2>
+          <ul>
+            <li>本アプリはローカル優先で設計されていますが、一部機能ではアカウント連携や同期が含まれる場合があります。</li>
+            <li>入力した情報や記録については、ユーザー自身が責任を負います。</li>
+            <li>アプリ内機能または問い合わせにより、一部データの削除を求めることができます。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>4. 有料機能と購入</h2>
+          <ul>
+            <li>一部機能は有料で提供される場合があります。</li>
+            <li>購入はApple App StoreまたはGoogle Playのルールに従って処理されます。</li>
+            <li>返金、取消、税、請求に関する事項は各ストアの方針が優先します。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5. 禁止事項</h2>
+          <p>ユーザーは次の行為を行ってはなりません。</p>
+          <ul>
+            <li>サービスの正常動作を妨げる行為</li>
+            <li>無断複製、リバースエンジニアリング、セキュリティ回避</li>
+            <li>第三者の権利やプライバシーを侵害する行為</li>
+            <li>違法または不正な目的での利用</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>6. 知的財産権</h2>
+          <p>
+            アプリ、デザイン、コード、ブランド、オラクル関連のサービス内容に関する権利は、
+            運営者または正当な権利者に帰属します。
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>7. ユーザー提供コンテンツ</h2>
+          <p>
+            質問、メモ、プロフィール情報などの権利はユーザーにあります。
+            ただし、サービス提供、同期、バックアップ、購入確認、サポート対応に必要な範囲で処理されることがあります。
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>8. 免責と責任制限</h2>
+          <ul>
+            <li>サービスは現状有姿で提供されます。</li>
+            <li>運営者は、ユーザーの判断や行動の結果について代わって責任を負いません。</li>
+            <li>法令で認められる範囲で、間接損害、特別損害、結果的損害に対する責任を制限する場合があります。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>9. サービスの変更・終了</h2>
+          <p>
+            運営者は、機能、価格、サポート範囲などを変更、中断、または終了することがあります。
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>10. 準拠法と問い合わせ</h2>
+          <p>
+            強行法規に別段の定めがない限り、本規約は大韓民国法に準拠して解釈されます。
+            問い合わせ先: <a class="inline" href="mailto:cluenode@gmail.com">cluenode@gmail.com</a>
+          </p>
+          <div class="notice">
+            本文書は運用用のドラフトです。公開前に、運営主体名、決済文言、
+            準拠法・管轄条項の妥当性を最終確認することをおすすめします。
+          </div>
+        </div>
+      </section>
+
+      <div class="footer">Verdicta / Terms of Service</div>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll("[data-lang]");
+      const sections = document.querySelectorAll(".lang");
+      function setLanguage(lang) {
+        document.documentElement.lang = lang;
+        sections.forEach((section) => {
+          section.classList.toggle("active", section.dataset.lang === lang);
+        });
+        buttons.forEach((button) => {
+          button.classList.toggle("active", button.dataset.lang === lang);
+        });
+      }
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.lang));
+      });
+      const browserLang = (navigator.language || "ko").toLowerCase();
+      if (browserLang.startsWith("ja")) setLanguage("ja");
+      else if (browserLang.startsWith("en")) setLanguage("en");
+      else setLanguage("ko");
+    </script>
+  </body>
+</html>
